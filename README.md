@@ -1,4 +1,4 @@
-**# 📘 Linear Dependence and Linear Independence
+# 📘 Linear Dependence and Linear Independence
 
 ---
 
@@ -8,11 +8,11 @@
 
 A set of vectors is said to be **linearly dependent** if **at least one vector in the set can be expressed as a linear combination of the other vectors**.  
 
-Mathematically, vectors $$ \vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n $$are linearly dependent if there exist **constants**, not all zero, such that:
+Mathematically, vectors $$\(\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n\)$$ are linearly dependent if there exist **constants, not all zero**, such that:
 
-
-$$c_1\vec{v}_1 + c_2\vec{v}_2 + \cdots + c_n\vec{v}_n = \vec{0}, \quad \text{where at least one } c_i \neq 0$$
-
+$$
+c_1\vec{v}_1 + c_2\vec{v}_2 + \cdots + c_n\vec{v}_n = \vec{0}, \quad \text{where at least one } c_i \neq 0
+$$
 
 Linear dependence indicates **redundancy in the set of vectors**, commonly seen when vectors are **parallel, proportional, or repeated**.
 
@@ -20,15 +20,12 @@ Linear dependence indicates **redundancy in the set of vectors**, commonly seen 
 
 ### ✅ Geometric Visual Representation
 
-$$\vec{v}_1 \; \longrightarrow \quad 
-\vec{v}_2 \; \longrightarrow \quad 
-\text{(Same direction → Dependent)}$$
+v₁ ─────────▶
+v₂ ─────────▶ (Same direction → Dependent)
 
 or
 
-$$
-\vec{v}_2 = 2\vec{v}_1 \; \checkmark$$
-
+v₂ = 2v₁ ✅
 
 ---
 
@@ -37,10 +34,12 @@ $$
 #### ✅ Example 1: Proportional Vectors (2D)
 
 $$
-\vec{v}_1 = (2, 4), \quad \vec{v}_2 = (1, 2)$$
+\vec{v}_1 = (2, 4), \quad \vec{v}_2 = (1, 2)
+$$
 
-
-- $ (2, 4) = 2 \cdot (1, 2)$
+$$
+\(2,4) = 2 \cdot (1,2)
+$$
 - One vector is a **multiple of the other**  
 
 ✅ **Conclusion:** Dependent
@@ -50,8 +49,8 @@ $$
 #### ✅ Example 2: Repeated Vectors (2D)
 
 $$
-\vec{v}_1 = (3, -2), \quad \vec{v}_2 = (3, -2)$$
-
+\vec{v}_1 = (3, -2), \quad \vec{v}_2 = (3, -2)
+$$
 
 - Vectors are identical  
 - One vector can be written directly from the other  
@@ -60,13 +59,13 @@ $$
 
 ---
 
-#### ✅ Example 3: Three Vectors on the Same Line (2D)
+#### ✅ Example 3: Three Vectors in Same Line (2D)
 
 $$
-\vec{v}_1 = (1, 1), \quad \vec{v}_2 = (2, 2), \quad \vec{v}_3 = (3, 3)$$
+\vec{v}_1 = (1, 1), \quad \vec{v}_2 = (2, 2), \quad \vec{v}_3 = (3, 3)
+$$
 
-
-- $$ \vec{v}_2 = 2\vec{v}_1 $$,  $$\vec{v}_3 = 3\vec{v}_1 $$ 
+$$\( \vec{v}_2 = 2\vec{v}_1 \), \( \vec{v}_3 = 3\vec{v}_1 \) $$ 
 - All lie on the **same straight line**  
 
 ✅ **Conclusion:** Dependent
@@ -76,10 +75,10 @@ $$
 #### ✅ Example 4: Three Vectors in 3D (One Combination)
 
 $$
-\vec{v}_1 = (1, 0, 1), \quad \vec{v}_2 = (0, 1, 1), \quad \vec{v}_3 = (1, 1, 2)$$
+\vec{v}_1 = (1, 0, 1), \quad \vec{v}_2 = (0, 1, 1), \quad \vec{v}_3 = (1, 1, 2)
+$$
 
-
--  $\vec{v}_3 = \vec{v}_1 + \vec{v}_2 $
+$$ \( \vec{v}_3 = \vec{v}_1 + \vec{v}_2 \)$$  
 - One vector is a **combination of the other two**  
 
 ✅ **Conclusion:** Dependent
@@ -89,11 +88,8 @@ $$
 #### ✅ Example 5: Four Vectors in 3D
 
 $$
-\vec{a} = (3, 4, 5), \quad 
-\vec{b} = (-3, 0, 5), \quad 
-\vec{c} = (4, 4, 4), \quad 
-\vec{d} = (3, 4, 0)$$
-
+\vec{a}=(3,4,5),\ \vec{b}=(-3,0,5),\ \vec{c}=(4,4,4),\ \vec{d}=(3,4,0)
+$$
 
 - Dimension = 3, vectors = 4  
 - **More vectors than dimension → automatically dependent**  
@@ -106,7 +102,7 @@ $$
 
 - At least one vector is **redundant**  
 - Vectors lie on the **same line or plane**  
-- Determinant = 0 *(for square matrices)*  
+- Determinant = 0 (for square matrices)  
 - Rank is **less than the number of vectors**
 
 ---
@@ -117,38 +113,32 @@ $$
 
 A set of vectors is said to be **linearly independent** if **none of the vectors can be written as a linear combination of the others**.  
 
-Mathematically, vectors  $$\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n$$ are linearly independent if the equation
+Mathematically, vectors $$\(\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n\)$$ are linearly independent if the equation
 
 $$
-c_1\vec{v}_1 + c_2\vec{v}_2 + \cdots + c_n\vec{v}_n = \vec{0}$$
-
+c_1\vec{v}_1 + c_2\vec{v}_2 + \cdots + c_n\vec{v}_n = \vec{0}
+$$
 
 has **only the trivial solution**:
 
 $$
-c_1 = c_2 = \cdots = c_n = 0$$
+c_1 = c_2 = \cdots = c_n = 0
+$$
 
-
-> **Trivial solution:** All constants = 0.  
-> If any non-zero constant exists → non-trivial → dependent.
+> **Trivial solution**: all constants = 0. If any non-zero constant exists, the solution is non-trivial → dependent.
 
 ---
 
 ### ✅ Geometric Visual Representation
 
-$$
-\vec{v}_1 \longrightarrow \quad 
-\vec{v}_2 \nearrow \quad 
-(\text{Non-parallel → Independent})$$
-
+v₁ ─────▶
+↗ v₂
+(Non-parallel → Independent)
 
 Or in 3D:
 
-$$
-\hat{x} \rightarrow, \quad \hat{y} \uparrow, \quad \hat{z} \text{ (out of plane)}$$
-
-
-All directions different → **Independent**
+x → , y ↑ , z ⤴
+All directions different → Independent
 
 ---
 
@@ -157,10 +147,10 @@ All directions different → **Independent**
 #### ✅ Example 1: Standard Unit Vectors (2D)
 
 $$
-\vec{i} = (1, 0), \quad \vec{j} = (0, 1)$$
+\vec{i} = (1, 0), \quad \vec{j} = (0, 1)
+$$
 
-
-- No scalar multiple of  $$(1, 0) $$gives  $$(0, 1) $$ 
+- No scalar multiple of \((1,0)\) gives \((0,1)\)  
 - Directions are **perpendicular**
 
 ✅ **Conclusion:** Independent
@@ -170,11 +160,11 @@ $$
 #### ✅ Example 2: Non-Proportional Vectors (2D)
 
 $$
-\vec{v}_1 = (1, 2), \quad \vec{v}_2 = (3, 4)$$
+\vec{v}_1 = (1, 2), \quad \vec{v}_2 = (3, 4)
+$$
 
-
-- $$ (1, 2)$$ is **not a multiple** of $$ (3, 4)$$  
-- Ratios:  $$\frac{1}{3} \neq \frac{2}{4} $$ 
+\( (1,2) \) is **not a multiple of** \( (3,4) \)  
+- Ratios: $$\( \frac{1}{3} \neq \frac{2}{4} \)$$  
 
 ✅ **Conclusion:** Independent
 
@@ -183,13 +173,11 @@ $$
 #### ✅ Example 3: Three Independent Vectors (3D)
 
 $$
-\vec{i} = (1, 0, 0), \quad 
-\vec{j} = (0, 1, 0), \quad 
-\vec{k} = (0, 0, 1)$$
-
+\vec{i}=(1,0,0), \quad \vec{j}=(0,1,0), \quad \vec{k}=(0,0,1)
+$$
 
 - None can be formed using the other two  
-- All lie along **different coordinate axes**
+- All lie along **different axes**
 
 ✅ **Conclusion:** Independent
 
@@ -198,12 +186,10 @@ $$
 #### ✅ Example 4: Three Non-Collinear Vectors (3D)
 
 $$
-\vec{v}_1 = (1, 0, 1), \quad 
-\vec{v}_2 = (0, 1, 2), \quad 
-\vec{v}_3 = (2, 1, 3)$$
+\vec{v}_1 = (1, 0, 1), \quad \vec{v}_2 = (0, 1, 2), \quad \vec{v}_3 = (2, 1, 3)
+$$
 
-
-- Cannot write any vector as a combination of the other two  
+- Cannot write any vector as combination of the other two  
 - Vectors **span 3D space**  
 
 ✅ **Conclusion:** Independent
@@ -213,9 +199,8 @@ $$
 #### ✅ Example 5: Two Vectors in 3D (Different Directions)
 
 $$
-\vec{v}_1 = (1, 2, 0), \quad 
-\vec{v}_2 = (0, 1, 1)$$
-
+\vec{v}_1 = (1, 2, 0), \quad \vec{v}_2 = (0, 1, 1)
+$$
 
 - Not scalar multiples  
 - Directions **linearly independent in space**  
@@ -231,4 +216,3 @@ $$
 - **Number of vectors > dimension → Dependent**  
 - **One vector = multiple of another → Dependent**  
 - **Zero vector in set → Dependent**
-**
